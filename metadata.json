@@ -1,0 +1,6 @@
+{
+  "name": "DeadlineKu",
+  "description": "Aplikasi manajemen aktivitas dan produktivitas pintar untuk mengatur seluruh tugas, jadwal, kebiasaan, dan proyek hidup Anda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

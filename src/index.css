@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-teal: #75C9C0;
+    --color-soft-mint: #A9DCD5;
+    --color-deep-teal: #347F80;
+    --color-primary-indigo: #6575C9;
+    --color-soft-lavender: #B9BFF0;
+    --color-light-lavender: #E4E5FA;
+    --color-bg-light: #F5F6F8;
+    --color-card-white: #FFFFFF;
+    --color-dark-navy: #28334A;
+    --color-text-primary: #303642;
+    --color-text-secondary: #858B98;
+    --color-warning-orange: #F2B56B;
+    --color-danger: #E98E91;
+    --color-success: #82BFA4;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #36435E;
+}
+
+/* Glassmorphism & card subtle utilities */
+.card-soft {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.dark .card-soft {
+  background: rgba(40, 51, 74, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(54, 67, 94, 0.6);
+}
+
+/* Teal & Indigo Gradient Utilities */
+.bg-gradient-teal-indigo {
+  background: linear-gradient(135deg, #75C9C0 0%, #6575C9 100%);
+}
+
+.text-gradient-teal-indigo {
+  background: linear-gradient(135deg, #347F80 0%, #6575C9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gradient-teal-indigo {
+  background: linear-gradient(135deg, #75C9C0 0%, #B9BFF0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
